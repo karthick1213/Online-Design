@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>STARK : Online Shopping Website</title>
+  <link rel="icon" href="Starklogo.png" type="image/icon type">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="photogrid.css">
+  <link rel="stylesheet" href="men.css">
+  <link rel="stylesheet" href="css/menfilter.css">
+  <link rel="stylesheet" href="css/productpage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+
+  <nav class="nav1 navbar navbar-expand-lg navbar-dark sticky-top">
+    <a class="navbar-brand" href="index1.html" style="color:white;font-family:MontBlack;">STARK.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="men.html" style="color:white;">MEN <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="women.html" style="color:white">WOMEN <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" style="color:white">CUSTOMIZE <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color:white;">LogOut<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Title of the page -->
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    &nbsp&nbsp&nbsp&nbsp&nbsp
+    <li class="breadcrumb-item"><a href="index.html"  style="color:black;">Home</a></li>
+    <li class="breadcrumb-item"><a href="men.html"  style="color:black;">Men's Clothing</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Definately not 7</li>
+  </ol>
+</nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="navbar-brand" style="font-weight:800;color:black;">STARK.</a>
+          <i type="button" class="bi bi-x" style="font-size:30px;" data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <div class="modal-body">
+          <input type="text" placeholder="Email Address" class="form-control" id="recipient-name"><br>
+          <input type="password" placeholder="Password" class="form-control" id="recipient-name">
+          <br>
+          <p class="text-center" style="text-align:justify;">By logging in, you agree to Stark's Privacy Policy and <br> Terms of Use.</p>
+          <center><button type="button" style="background-color:black;border-color:black;" class="btn btn-primary">LOG IN</button></center>
+          <br>
+          <center><a class="" data-bs-toggle="modal" data-bs-target="#signupmodal" data-bs-dismiss="modal" style="font-weight:600;color:black;" id="crtact" onclick="crtact">New to Stark? Create Account</a></center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Signup Modal-->
+  <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="navbar-brand" style="font-weight:800;color:black;">STARK.</a>
+          <i type="button" class="bi bi-x" style="font-size:30px;" data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <div class="modal-body">
+          <input type="text" placeholder="Email Address" class="form-control" id="recipient-name"><br>
+          <input type="password" placeholder="Password" class="form-control" id="recipient-name"><br>
+          <input type="password" placeholder="Confirm Password" class="form-control" id="recipient-name">
+          <br>
+          <p class="text-center" style="text-align: justify;">By Creating an account, you agree to Stark's Privacy Policy and <br> Terms of Use.</p>
+          <center><button type="button" style="background-color:black;border-color:black;" class="btn btn-primary">SIGN UP</button></center>
+          <br>
+          <center><a class="" data-bs-toggle="modal" data-bs-target="#loginmodal" data-bs-dismiss="modal" style="font-weight:600;color:black;" id="bcklg" onclick="bcklg">Back To Login</a></center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <center>
+  <section id="services" class="services section-bg">
+   <div class="container-fluid">
+      <div class="row row-sm">
+         <div class="col-md-5 _boxzoom">
+            <div class="_product-images">
+               <div class="picZoomer">
+                  <img class="my_img" src="img/women/women12.jpg" alt="">
+               </div>
+            </div>
+         </div>
+         <div class="col-md-5">
+            <div class="_product-detail-content">
+               <p class="_p-name"> <b>Introvert</b> </p>
+               <div class="_p-price-box">
+                  <div class="p-list">
+                     <span> M.R.P. : <i class="fa fa-inr"></i> <del> 1399  </del>   </span>
+                     <span class="price"> Rs. 899 </span>
+                  </div>
+                  <div class="_p-add-cart">
+                     <div class="_p-qty">
+                        <span>Add Quantity</span>
+                        <div class="value-button decrease_" id="" value="Decrease Value">-</div>
+                        <input type="number" name="qty" id="number" value="1" />
+                        <div class="value-button increase_" id="" value="Increase Value">+</div>
+                     </div>
+                  </div>
+                  <div class="_p-features">
+
+                     <span>Brand - Polo Special </span>
+                  </div>
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-light active">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked> S
+                    </label>
+                    <label class="btn btn-light">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> M
+                    </label>
+                    <label class="btn btn-light">
+                      <input type="radio" name="options" id="option3" autocomplete="off"> L
+                    </label>
+                    <label class="btn btn-light">
+                      <input type="radio" name="options" id="option3" autocomplete="off"> XL
+                    </label><label class="btn btn-light">
+                      <input type="radio" name="options" id="option3" autocomplete="off"> 2XL
+                    </label><label class="btn btn-light">
+                      <input type="radio" name="options" id="option3" autocomplete="off"> 3XL
+                    </label>
+                  </div>
+                  <form action="" method="post" accept-charset="utf-8">
+                     <ul class="spe_ul"></ul>
+                     <div class="_p-qty-and-cart">
+                        <div class="_p-add-cart">
+                            <a href="buying.html" class="btn-theme btn buy-btn" tabindex="0">
+                           <i class="fa fa-shopping-cart"></i> Buy Now
+                         </a>
+                           <button class="btn-theme btn btn-success" tabindex="0">
+                           <i class="fa fa-shopping-cart"></i> Add to Cart
+                           </button>
+                           <input type="hidden" name="pid" value="18" />
+                           <input type="hidden" name="price" value="850" />
+                           <input type="hidden" name="url" value="" />
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+</center>
+
+
+<div id="products1">
+  <nav class="nav1 navbar navbar-expand-lg navbar-dark">
+    <p class="navbar-brand" style="font-size:20px;color:white;">Contact Us<br>
+      Phone No. 9790933400<br>
+      Stark pvt Ltd,<br>
+      Anna Nagar,<br>
+      Chennai.
+    </p>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <p class="navbar-brand" style="font-size:20px;color:white;">Stark Pvt Ltd.</p>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="js/productpage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+
+</html>
+w

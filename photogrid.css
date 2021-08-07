@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+.row1 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width:50%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 6px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.zoom {
+  transition: transform .3s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+@font-face {
+  font-family: MontRegular;
+  src: url('fonts/montserratregular.ttf');
+}
+
+.row2 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+  padding: 0 4px;
+}
+
+.column2 {
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column2 h3{
+font-family: MontRegular;
+margin-left: 20px;
+}
+
+.column2 p{
+font-family: MontRegular;
+font-size: 25px;
+margin-top: 20px;
+margin-left: 20px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column2 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column2 p,h3{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    font-size: 20px;
+  }
+}

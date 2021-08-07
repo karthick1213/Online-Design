@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>STARK : Online Shopping Website</title>
+  <link rel="icon" href="Starklogo.png" type="image/icon type">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="photogrid.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+
+  <nav class="nav1 navbar navbar-expand-lg navbar-dark sticky-top">
+    <a class="navbar-brand" href="index1.html" style="color:white;font-family:MontBlack;">STARK.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="men.html" style="color:white;">MEN <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="women.html" style="color:white">WOMEN <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="customize.html" style="color:white">CUSTOMIZE <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color:white;">LogOut<span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item active lineremove">
+          <a class="nav-link" style="color:white;">|<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" style="color:white" data-bs-toggle="modal" data-bs-target="#signupmodal">Sign up<span class="sr-only">(current)</span></a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="navbar-brand" style="font-weight:800;color:black;">STARK.</a>
+          <i type="button" class="bi bi-x" style="font-size:30px;" data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <div class="modal-body">
+            <form method="post" action="connection.php">
+          <input name="name" type="text" placeholder="Email Address" class="form-control" id="recipient-name"><br>
+          <input name="password" type="password" placeholder="Password" class="form-control" id="recipient-name">
+          <br>
+          <p class="text-center" style="text-align:justify;">By logging in, you agree to Stark's Privacy Policy and <br> Terms of Use.</p>
+          <center><button type="submit" style="background-color:black;border-color:black;"  class="btn btn-primary">LOG IN</button></center>
+          <br>
+          <center><a class="" data-bs-toggle="modal" data-bs-target="#signupmodal" data-bs-dismiss="modal" style="font-weight:600;color:black;" id="crtact" onclick="crtact">New to Stark? Create Account</a></center>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Signup Modal-->
+  <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="navbar-brand" style="font-weight:800;color:black;">STARK.</a>
+          <i type="button" class="bi bi-x" style="font-size:30px;" data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="signup.php">
+          <input name="firstname" type="text" placeholder="First Name" class="form-control" id="recipient-name" required><br>
+          <input name="lastname" type="text" placeholder="Last Name" class="form-control" id="recipient-name" required><br>
+          <input name="email" type="text" placeholder="Email Address" class="form-control" id="recipient-name" required><br>
+          <input name="password" type="password" placeholder="Password" class="form-control" id="recipient-name" required><br>
+          <input name="confirmpassword" type="password" placeholder="Confirm Password" class="form-control" id="recipient-name" required>
+          <br>
+          <p class="text-center" style="text-align: justify;">By Creating an account, you agree to Stark's Privacy Policy and <br> Terms of Use.</p>
+          <center><button type="submit" style="background-color:black;border-color:black;" class="btn btn-primary">SIGN UP</button></center>
+          <br>
+          <center><a class="" data-bs-toggle="modal" data-bs-target="#loginmodal" data-bs-dismiss="modal" style="font-weight:600;color:black;" id="bcklg" onclick="bcklg">Back To Login</a></center>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAROUSEL SLIDE -->
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active caro">
+        <a href="men.html"><img src="img/stark1.jpg" class="d-block w-100"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="women.html"><img src="img/starkwomen1.jpg" class="d-block w-100"></a>
+      </div>
+      <div class="carousel-item">
+        <img src="img/starkcus1.jpg" class="d-block w-100" alt="CUSTOMIZE"></a>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+  <br>
+
+  <!-- PHOTO GRID -->
+
+  <p href="index.html" style="font-weight:700;text-align:center;font-size:25px;color:black;">COLLECTION LIST</p>
+  <div class="row1">
+    <div class="column1">
+      <a href="men.html"><img src="img/stark1.jpg" class="zoom" style="width:100%"></a>
+    </div>
+    <div class="column1">
+      <img src="img/starkcus1.jpg" class="zoom" style="width:100%">
+    </div>
+    <div class="column1">
+      <a href="women.html"><img src="img/starkwomen1.jpg" class="zoom" style="width:100%"></a>
+    </div>
+  </div>
+
+  <!-- Why Stark. -->
+  <center>
+  <br>
+  <style>
+  img{
+    float:center;
+  }
+  </style>
+      <img src="img/starkabo.jpg" height="400" width="900" />
+    </div>
+    <center>
+    <br>
+  </div>
+
+
+  <!-- Footer -->
+
+  <nav class="nav1 navbar navbar-expand-lg navbar-dark">
+    <p class="navbar-brand" style="font-size:20px;color:white;">Contact Us<br>
+      Phone No. 9790933400<br>
+      Stark pvt Ltd,<br>
+      Anna Nagar,<br>
+      Chennai.
+    </p>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <p class="navbar-brand" style="font-size:20px;color:white;">Stark Pvt Ltd.</p>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+
+</html>

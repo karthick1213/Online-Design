@@ -1,0 +1,43 @@
+.img-fluid{
+max-width: 50%;
+max-height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-size: 30px;
+  text-align: center;
+  width: auto;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .grid-item {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .grid-container {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    grid-template-columns: auto;
+}
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .grid-item {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+}

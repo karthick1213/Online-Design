@@ -1,0 +1,109 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+}
+
+#product-svg {
+  position: absolute;
+  z-index: 2;
+  left: 115px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  mix-blend-mode: multiply;
+}
+
+#product-shape {
+  fill: #DBED64;
+}
+
+#background-image {
+  position: relative;
+  left: 100px;
+  height: auto;
+  z-index: 1;
+}
+
+@font-face {
+  font-family: MontRegular;
+  src: url('fonts/montserratregular.ttf');
+}
+
+@font-face {
+  font-family: MontBlack;
+  src: url('fonts/montserratblack.ttf');
+}
+
+.text-block {
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: white;
+  font-family: MontBlack;
+}
+
+.text-block1 {
+  position: absolute;
+  top: 30%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: white;
+}
+
+.colors {
+  display: flex;
+  bottom: 2em;
+  right: 2em;
+  z-index: 3;
+}
+
+.color {
+  height: 36px;
+  width: 36px;
+  margin-left: 0.5em;
+  /* border-radius: 18px; */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+  /* border: 2px solid #aaa; */
+  cursor: pointer;
+}
+
+.color {
+  height: 36px;
+  width: 36px;
+  margin-left: 0.5em;
+  border-radius: 18px;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.color1 {
+  height: 36px;
+  width: 36px;
+  margin-left: 0.5em;
+  border-radius: 18px;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.nikebg{
+cursor: pointer;
+}
